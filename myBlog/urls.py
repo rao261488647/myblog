@@ -1,4 +1,4 @@
-"""MyBlog URL Configuration
+"""myBlog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from blog.views import hello
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url('^hello/', hello),
 ]
